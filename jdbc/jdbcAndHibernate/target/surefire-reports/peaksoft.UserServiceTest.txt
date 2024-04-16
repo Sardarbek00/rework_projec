@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: peaksoft.UserServiceTest
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 0.336 s <<< FAILURE! - in peaksoft.UserServiceTest
+saveUser(peaksoft.UserServiceTest)  Time elapsed: 0.056 s  <<< FAILURE!
+java.lang.AssertionError: 
+Во время тестирования сохранения пользователя произошло исключение
+java.lang.NullPointerException: Cannot invoke "java.util.List.get(int)" because the return value of "peaksoft.service.UserService.getAllUsers()" is null
+	at peaksoft.UserServiceTest.saveUser(UserServiceTest.java:56)
+
+getAllUsers(peaksoft.UserServiceTest)  Time elapsed: 0.008 s  <<< FAILURE!
+java.lang.AssertionError: 
+При попытке достать всех пользователей из базы данных произошло исключение
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because "userList" is null
+	at peaksoft.UserServiceTest.getAllUsers(UserServiceTest.java:84)
+
+cleanUsersTable(peaksoft.UserServiceTest)  Time elapsed: 0.007 s  <<< FAILURE!
+java.lang.AssertionError: 
+При тестировании очистки таблицы пользователей произошло исключение
+java.lang.NullPointerException: Cannot invoke "java.util.List.size()" because the return value of "peaksoft.service.UserService.getAllUsers()" is null
+	at peaksoft.UserServiceTest.cleanUsersTable(UserServiceTest.java:100)
+
