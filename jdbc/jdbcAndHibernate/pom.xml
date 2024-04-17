@@ -11,7 +11,7 @@
 
   <name>jdbcAndHibernate Maven Webapp</name>
   <!-- FIXME change it to the project's website -->
-  <url>http://www.example.com</url>
+<!--  <url>htt://www.example.com</url>-->
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -31,11 +31,7 @@
       <artifactId>hibernate-core</artifactId>
       <version>6.4.4.Final</version>
     </dependency>
-    <dependency>
-    <groupId>org.jboss.logging</groupId>
-    <artifactId>jboss-logging</artifactId>
-    <version>3.5.0.Final</version>
-    </dependency>
+
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>

@@ -11,9 +11,7 @@ public class Util {
     public static SessionFactory getSessionFactory() {
         SessionFactory sessionFactory = null;
         try {
-            sessionFactory = new Configuration()
-                    .configure("hibernate.cfg.xml")
-                    .addAnnotatedClass(User.class)
+            sessionFactory=new Configuration()
                     .buildSessionFactory();
         } catch (HibernateException e) {
             System.out.println("ERROR in getSessionFactory method: ");
